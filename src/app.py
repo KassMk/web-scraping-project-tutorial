@@ -18,7 +18,7 @@ def download_html(url):
     }
     resp = requests.get(url, headers=headers)
     if resp.status_code != 200:
-        raise Exception(f"❌ Error {resp.status_code} al acceder a {url}")
+        raise Exception(f"Error {resp.status_code} al acceder a {url}")
     print("Página descargada exitosamente")
     return resp.text
 
